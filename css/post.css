@@ -1,0 +1,108 @@
+/* ============================================================
+   POST / JOURNAL ENTRY PAGE STYLES
+   ============================================================ */
+
+.post-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 5rem 2.5rem 6rem;
+}
+
+/* Header */
+.post-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-kicker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.post-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.post-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--muted);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Body */
+.post-body {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: var(--text);
+}
+
+.post-body p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-body h2 {
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin: 2.5rem 0 1rem;
+}
+
+.post-body h3 {
+  font-size: 1.15rem;
+  color: var(--text);
+  margin: 2rem 0 0.75rem;
+}
+
+.post-body ul,
+.post-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-body li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.post-body blockquote {
+  border-left: 3px solid var(--primary);
+  margin: 2rem 0;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  font-style: italic;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.post-body a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.post-body a:hover { color: var(--primary-dark); }
+
+/* Footer */
+.post-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 480px) {
+  .post-wrap { padding: 3rem 1.25rem 4rem; }
+  .post-body { font-size: 1rem; }
+  .post-body p { font-size: 1rem; }
+}
